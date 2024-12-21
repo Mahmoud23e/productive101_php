@@ -1,0 +1,26 @@
+
+.header {
+    background-color: #f6f6f6;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+
+}
+
+.container {
+    background-color: #f6f6f6;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.container:hover {
+    color: #f6f6f6;
+    background-color: #273343;
+    border: none;
+    border-radius: 15px;
+}

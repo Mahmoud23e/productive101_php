@@ -1,0 +1,150 @@
+.todo-h1 {
+    display: inline;
+}
+
+.todo-p {
+    display: inline;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 4px;
+    margin-left: 5px;
+    background-color: #F7900F;
+    color: white;
+}
+
+.todo-p1 {
+    display: inline;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 4px;
+    margin-left: 5px;
+    background-color: #000000;
+    color: white;
+}
+
+.todo-p2 {
+    display: inline;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 4px;
+    margin-left: 5px;
+    background-color: #2095b5;
+    color: white;
+}
+
+.todo-card {
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: rgb(235, 237, 239);
+}
+
+#task {
+    text-align: center;
+    margin: 0px;
+    height: 60px;
+}
+
+.todo-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 250px;
+    height: 350px;
+    background-color: rgb(235, 237, 239);
+    overflow: scroll;
+}
+
+.todo-item {
+    margin: 2px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    /* Added for absolute positioning of task menu */
+}
+
+.todo-item:hover {
+    transform: translate(0, -5px);
+}
+
+#bot {
+    width: 100%;
+}
+
+.todo-item h3 {
+    font-weight: bold;
+}
+
+.task-menu {
+    position: absolute;
+    /* Positioning for the three dots */
+    top: 10px;
+    /* Adjust as needed */
+    right: 10px;
+    /* Position it to the right */
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 150px;
+}
+
+.menu-content button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.menu-content button:hover {
+    background-color: #f1f1f1;
+}
+
+.task-menu:click .menu-content {
+    display: block;
+}
+
+.three-dots {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.todo-item ul {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    border-radius: 15px;
+    /* Make the list curved */
+    overflow: hidden;
+    /* Ensures no overflow */
+}
+
+.todo-item li {
+    background-color: #e0e0e0;
+    /* Background for subtasks */
+    border-radius: 10px;
+    /* Curved shape for each subtask */
+    margin: 5px 0;
+    /* Margin between subtasks */
+    padding: 8px;
+    /* Padding for each subtask */
+}

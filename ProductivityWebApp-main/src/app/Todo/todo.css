@@ -1,0 +1,179 @@
+.todo-h1 {
+  display: inline;
+}
+
+.todo-p {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 4px;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f7900f;
+  color: white;
+}
+
+.todo-p1 {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 4px;
+  margin-left: 5px;
+  background-color: #000000;
+  color: white;
+}
+
+.todo-p2 {
+  display: inline;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 4px;
+  margin-left: 5px;
+  background-color: #2095b5;
+  color: white;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: rgb(235, 237, 239);
+}
+
+#task {
+  text-align: center;
+  margin: 50px;
+  height: 60px;
+  width: 800px;
+}
+#bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  padding: 0 !important;
+}
+
+.todo-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 15px;
+  width: 250px;
+  height: 350px;
+  background-color: rgb(235, 237, 239);
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.todo-body::-webkit-scrollbar {
+  display: none;
+}
+.todo-item {
+  margin: 2px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.todo-item:hover {
+  transform: rotate(1deg);
+}
+
+#bot {
+  width: 750px;
+}
+
+.todo-item h3 {
+  font-weight: bold;
+}
+
+.task-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-content button {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.task-menu:click .menu-content {
+  display: block;
+}
+
+.three-dots {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.todo-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.todo-item li {
+  background-color: #e0e0e0;
+
+  border-radius: 10px;
+
+  margin: 5px 0;
+
+  padding: 8px;
+}
+#modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  backdrop-filter: blur(8px);
+}
+#modal-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  scrollbar-width: none;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#modal::-webkit-scrollbar {
+  display: none;
+}
+#modal-content input {
+  color: black;
+}
